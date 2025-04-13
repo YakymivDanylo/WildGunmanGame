@@ -1,1 +1,1 @@
-[WildGunman](game.html)
+[Play!](game.html)
