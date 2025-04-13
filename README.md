@@ -1,1 +1,1 @@
-[Play!](game.html)
+[Lab7](game.html)
