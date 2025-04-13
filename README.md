@@ -1,1 +1,1 @@
-**[Lab 7](game.html)**
+**[Lab 7](WildGunmanGame/game.html)**
