@@ -78,11 +78,6 @@ function nextLevel() {
         gameScreen.style.display = 'none';
         gamePanels.style.display = 'none';
         winScreen.style.display = 'block';
-
-        // Додаємо вивід очків на екран перемоги
-        const finalScore = document.querySelector('.score-panel__score_num').textContent;
-        const winTitle = document.querySelector('.win-screen__title');
-        winTitle.innerHTML = `You have won the game!<br>Final Score: <span style="color: #e20f0f;">${finalScore}</span>`;
     }
 }
 
