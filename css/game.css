@@ -324,6 +324,12 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.win-screen__title span {
+  color: #e20f0f;
+  font-size: 60px;
+  display: block;
+  margin-top: 20px;
+}
 /*                              End Game win screen style                    */
 
 /*                              Gunman style                                 */

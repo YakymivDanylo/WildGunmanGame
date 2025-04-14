@@ -39,7 +39,7 @@ function startGame() {
     timeGunman.textContent = (timeToDuel / 1000).toFixed(2);
     timeYou.textContent = (0).toFixed(2);
     score = Number(document.querySelector('.score-panel__score_num').textContent);
-    showLevel.textContent = `level: ${level}`; // Використано шаблонний рядок
+    showLevel.textContent = `level: ${level}`;
     gunman.classList.add(`gunman-level-${level}`);
     gunman.addEventListener('transitionend', prepareForDuel);
     setTimeout(() => moveGunman(), 500);
@@ -78,6 +78,11 @@ function nextLevel() {
         gameScreen.style.display = 'none';
         gamePanels.style.display = 'none';
         winScreen.style.display = 'block';
+
+        // Додаємо вивід очків на екран перемоги
+        const finalScore = document.querySelector('.score-panel__score_num').textContent;
+        const winTitle = document.querySelector('.win-screen__title');
+        winTitle.innerHTML = `You have won the game!<br>Final Score: <span style="color: #e20f0f;">${finalScore}</span>`;
     }
 }
 
